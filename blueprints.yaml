@@ -1,0 +1,27 @@
+name: Wynona
+version: 0.1.0
+description: Theme for the Wynona restaurant in Toronto Canada
+icon: rebel
+author:
+  name: Paul Bovis
+  email: paulbovisblahblah@gmail.com
+homepage: https://github.com/bovisp/grav-theme-wynona
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/bovisp/grav-theme-wynona/issues
+readme: https://github.com/bovisp/grav-theme-wynona/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
